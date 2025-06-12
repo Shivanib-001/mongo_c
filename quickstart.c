@@ -9,8 +9,8 @@ main (void)
 
     mongoc_init ();
 
-    mongoc_client_t *client = mongoc_client_new ("mongodb+srv://test:test@cluster0.bdt4998.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
-    mongoc_collection_t *collection = mongoc_client_get_collection (client, "jun112025", "test1");
+    mongoc_client_t *client = mongoc_client_new ("mongodb+srv://username:password@cluster0.bdt4998.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+    mongoc_collection_t *collection = mongoc_client_get_collection (client, "dbname", "coll_name");
 
 
 /*--------------------------read data from database ----------------------------------*/
